@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.section-heading",
+        "blocks.person-card",
+        "blocks.newsletter",
+        "blocks.markdown",
+        "blocks.hero",
+        "blocks.faqs",
+        "blocks.content-with-image",
+        "blocks.card-grid"
+      ]
+    }
+  }
+}
