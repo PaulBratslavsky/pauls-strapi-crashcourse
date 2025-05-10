@@ -53,8 +53,7 @@
         "blocks.hero",
         "blocks.faqs",
         "blocks.content-with-image",
-        "blocks.card-grid",
-        "blocks.featured-articles"
+        "blocks.card-grid"      
       ]
     }
   }
