@@ -37,10 +37,14 @@ export interface BlocksFaqs extends Struct.ComponentSchema {
 export interface BlocksFeaturedArticles extends Struct.ComponentSchema {
   collectionName: 'components_blocks_featured_articles';
   info: {
+    description: '';
     displayName: 'Featured Articles';
   };
   attributes: {
-    articles: Schema.Attribute.Relation<'oneToMany', 'api::article.article'>;
+    relatedArticles: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::article.article'
+    >;
   };
 }
 

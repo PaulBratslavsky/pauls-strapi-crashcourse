@@ -1,11 +1,12 @@
 {
   "collectionName": "components_blocks_featured_articles",
   "info": {
-    "displayName": "Featured Articles"
+    "displayName": "Featured Articles",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "articles": {
+    "relatedArticles": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::article.article"

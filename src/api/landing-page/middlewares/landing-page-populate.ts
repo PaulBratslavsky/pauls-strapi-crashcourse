@@ -45,11 +45,11 @@ const populate = {
       "blocks.newsletter": true,
       "blocks.featured-articles": {
         populate: {
-          articles: {
-            populate: "*"
-          }
-        }
-      }
+          relatedArticles: {
+            fields: ["documentId", "title"]
+          },
+        },
+      },
     }
   }
 }
