@@ -1,4 +1,4 @@
-/**
+g/**
  * `page-populate` middleware
  */
 
