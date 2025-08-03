@@ -53,8 +53,13 @@
         "blocks.hero",
         "blocks.faqs",
         "blocks.content-with-image",
-        "blocks.card-grid"      
+        "blocks.card-grid"
       ]
+    },
+    "relatedArticles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
     }
   }
 }

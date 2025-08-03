@@ -27,7 +27,8 @@
         "blocks.markdown",
         "blocks.person-card",
         "blocks.faqs",
-        "blocks.newsletter"
+        "blocks.newsletter",
+        "blocks.featured-articles"
       ]
     }
   }

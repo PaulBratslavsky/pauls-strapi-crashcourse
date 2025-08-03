@@ -59,6 +59,14 @@ const populate = {
       "blocks.newsletter": true,
     },
   },
+  relatedArticles: {
+    populate: {
+      featuredImage: {
+        fields: ["alternativeText", "url"],
+      },
+      author: true,
+    },
+  },
 };
 
 export default (config, { strapi }: { strapi: Core.Strapi }) => {

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "page",
     "pluralName": "pages",
-    "displayName": "Page"
+    "displayName": "Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -30,7 +31,8 @@
         "blocks.hero",
         "blocks.faqs",
         "blocks.content-with-image",
-        "blocks.card-grid"
+        "blocks.card-grid",
+        "blocks.featured-articles"
       ]
     }
   }

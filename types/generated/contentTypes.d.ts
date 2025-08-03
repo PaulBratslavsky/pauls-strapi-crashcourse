@@ -392,7 +392,6 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
         'blocks.faqs',
         'blocks.content-with-image',
         'blocks.card-grid',
-        'blocks.featured-articles',
       ]
     >;
     content: Schema.Attribute.RichText;
@@ -409,6 +408,10 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    relatedArticles: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::article.article'
+    >;
     slug: Schema.Attribute.UID<'title'>;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -507,6 +510,7 @@ export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
         'blocks.person-card',
         'blocks.faqs',
         'blocks.newsletter',
+        'blocks.featured-articles',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
@@ -530,6 +534,7 @@ export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
 export interface ApiPagePage extends Struct.CollectionTypeSchema {
   collectionName: 'pages';
   info: {
+    description: '';
     displayName: 'Page';
     pluralName: 'pages';
     singularName: 'page';
@@ -548,6 +553,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'blocks.faqs',
         'blocks.content-with-image',
         'blocks.card-grid',
+        'blocks.featured-articles',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
