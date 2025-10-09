@@ -3,7 +3,6 @@
  */
 
 import type { Core } from "@strapi/strapi";
-import { features } from "process";
 
 const populate = {
   blocks: {
